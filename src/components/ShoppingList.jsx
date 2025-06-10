@@ -9,7 +9,7 @@ function ShoppingList() {
 
   const API_URL = "http://localhost:4000/items";
 
-  //Add useEffect hook to display items on load
+  //1. Add useEffect hook to display items on load
   useEffect(() => {
     //console.log("component loaded") - use at first to check if it is working 
      fetch(API_URL)
@@ -24,6 +24,14 @@ function ShoppingList() {
       .catch(error => console.log(error))
   }, []);
 
+  //3. add a handleAddItem function to shopping list so that the ItemForm component can send the new item up to the Shopping List
+  
+  function handleAddItem(newItem) {
+    //console.log("In ShoppingList:", newItem);
+    //6. update to update state
+    setItems([...items, newItem]);
+  }
+
 
   function handleCategoryChange(category) {
     setSelectedCategory(category);
@@ -37,7 +45,8 @@ function ShoppingList() {
 
   return (
     <div className="ShoppingList">
-      <ItemForm />
+       {/* 4.  added the onAddItem prop! */}
+      <ItemForm onAddItem={handleAddItem}/>
       <Filter
         category={selectedCategory}
         onCategoryChange={handleCategoryChange}
