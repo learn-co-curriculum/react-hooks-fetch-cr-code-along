@@ -12,7 +12,7 @@ function ShoppingList() {
   //1. Add useEffect hook to display items on load
   useEffect(() => {
     //console.log("component loaded") - use at first to check if it is working 
-     fetch(API_URL)
+    fetch(API_URL)
       .then(r => {
         if (r.ok) {
           return r.json()
@@ -24,8 +24,21 @@ function ShoppingList() {
       .catch(error => console.log(error))
   }, []);
 
-  //3. add a handleAddItem function to shopping list so that the ItemForm component can send the new item up to the Shopping List
-  
+  //4,update: add callback function that houses our items in state and passes as a prop to the item component
+  //7,update: call set state with new array that replaces item with .map()
+  function handleUpdateItem(updatedItem) {
+    //console.log("In ShoppingCart:", updatedItem);
+    const updatedItems = items.map(item => {
+      if (item.id === updatedItem.id) {
+        return updatedItem;
+      } else {
+        return item;
+      }
+    });
+    setItems(updatedItems);
+  }
+
+  //3. add a handleAddItem function to shopping list so that the ItemForm component can send the new item up to the Shopping List  
   function handleAddItem(newItem) {
     //console.log("In ShoppingList:", newItem);
     //6. update to update state
@@ -45,15 +58,17 @@ function ShoppingList() {
 
   return (
     <div className="ShoppingList">
-       {/* 4.  added the onAddItem prop! */}
-      <ItemForm onAddItem={handleAddItem}/>
+      {/* 4.  added the onAddItem prop! */}
+      <ItemForm onAddItem={handleAddItem} />
       <Filter
         category={selectedCategory}
         onCategoryChange={handleCategoryChange}
       />
       <ul className="Items">
+        {/*5,update pass it as a prop to Item */}
         {itemsToDisplay.map((item) => (
-          <Item key={item.id} item={item} />
+          <Item key={item.id} item={item}
+            onUpdateItem={handleUpdateItem} />
         ))}
       </ul>
     </div>
