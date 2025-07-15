@@ -20,6 +20,10 @@ function ShoppingList() {
       .catch(error => console.log(error))
   }, []);
 
+  function handleAddItem(newItem) {
+    setItems([...items, newItem])
+  }
+
   useEffect(() => {
     console.log("component loaded")
   }, []);
@@ -36,7 +40,7 @@ function ShoppingList() {
 
   return (
     <div className="ShoppingList">
-      <ItemForm />
+      <ItemForm onAddItem={handleAddItem} />
       <Filter
         category={selectedCategory}
         onCategoryChange={handleCategoryChange}
