@@ -54,7 +54,7 @@ $ npm run dev
 ```
 
 View the application in the browser at
-[http://localhost:3000](http://localhost:3000). We don't have any data to
+[http://localhost:5173](http://localhost:5173). We don't have any data to
 display yet, but eventually, we'll want to display the list of items from
 `json-server` in our application and be able to perform CRUD actions on them.
 
