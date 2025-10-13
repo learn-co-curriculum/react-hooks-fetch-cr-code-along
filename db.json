@@ -1,39 +1,87 @@
 {
   "items": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Yogurt",
       "category": "Dairy",
       "isInCart": false
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Pomegranate",
       "category": "Produce",
       "isInCart": false
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Lettuce",
       "category": "Produce",
       "isInCart": false
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "String Cheese",
       "category": "Dairy",
       "isInCart": false
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Swiss Cheese",
       "category": "Dairy",
       "isInCart": false
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Cookies",
       "category": "Dessert",
+      "isInCart": false
+    },
+    {
+      "id": "447f",
+      "name": "Apple",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "ca20",
+      "name": "carrots",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "03c2",
+      "name": "Beets",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "7d3d",
+      "name": "Beets",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "4f11",
+      "name": "Beets",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "075a",
+      "name": "Beets",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "05ea",
+      "name": "Beets",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "5242",
+      "name": "Beets",
+      "category": "Produce",
       "isInCart": false
     }
   ]
