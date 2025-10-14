@@ -29,10 +29,12 @@ function ShoppingList() {
 
     return item.category === selectedCategory;
   });
-
+  function handleAddItem(newItem) {
+    setItems((prevItems) => [...prevItems, newItem]);
+  }
   return (
     <div className="ShoppingList">
-      <ItemForm />
+      <ItemForm onAddItem={handleAddItem} />
       <Filter
         category={selectedCategory}
         onCategoryChange={handleCategoryChange}
