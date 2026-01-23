@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ItemForm from "./ItemForm";
 import Filter from "./Filter";
 import Item from "./Item";
@@ -6,6 +6,35 @@ import Item from "./Item";
 function ShoppingList() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [items, setItems] = useState([]);
+
+  useEffect(()=>{
+    // console.log("components loaded");
+    // fetch("http://localhost:4000/items")
+      fetch("https://fakestoreapi.com/products")
+      .then(response=>{
+        if(response.ok){
+          return response.json()
+        }else{
+          console.log("fetching request failed");
+          
+        }
+      })
+      .then(items=>
+        // console.log(items)
+        setItems(items)
+        
+      )
+      .catch(error=>
+        console.log(error)
+        
+      )
+    
+  },[])
+
+  function handleAddItem(newItem){
+    // console.log("in shopping list:",newItem)
+    setItems([...items,newItem])
+  }
 
   function handleCategoryChange(category) {
     setSelectedCategory(category);
@@ -19,7 +48,7 @@ function ShoppingList() {
 
   return (
     <div className="ShoppingList">
-      <ItemForm />
+      <ItemForm  onAddItem={handleAddItem}/>
       <Filter
         category={selectedCategory}
         onCategoryChange={handleCategoryChange}
