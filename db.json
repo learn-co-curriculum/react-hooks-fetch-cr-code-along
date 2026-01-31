@@ -1,39 +1,69 @@
 {
   "items": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Yogurt",
       "category": "Dairy",
       "isInCart": false
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Pomegranate",
       "category": "Produce",
       "isInCart": false
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Lettuce",
       "category": "Produce",
       "isInCart": false
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "String Cheese",
       "category": "Dairy",
       "isInCart": false
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Swiss Cheese",
       "category": "Dairy",
       "isInCart": false
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Cookies",
       "category": "Dessert",
+      "isInCart": false
+    },
+    {
+      "id": "2fe9",
+      "name": "Milk",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "2fbb",
+      "name": "Apple",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "c08c",
+      "name": "cake",
+      "category": "Dessert",
+      "isInCart": false
+    },
+    {
+      "id": "47cb",
+      "name": "Ghee",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "5f48",
+      "name": "Ghee",
+      "category": "Dairy",
       "isInCart": false
     }
   ]
