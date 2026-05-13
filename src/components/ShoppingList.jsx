@@ -30,12 +30,15 @@ function ShoppingList() {
 
     return item.category === selectedCategory;
   });
-
+  function handleItem(newItem){
+    setItems([...items,newItem])
+    console.log("In shoppingList: ", newItem);
+  }
 
 
   return (
     <div className="ShoppingList">
-      <ItemForm />
+      <ItemForm onAddItem={handleItem} />
       <Filter
         category={selectedCategory}
         onCategoryChange={handleCategoryChange}
