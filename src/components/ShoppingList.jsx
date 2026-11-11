@@ -20,3 +20,5 @@ function ShoppingList() {
       .catch(error => console.log(error))
   }, [])
 }
+
+export default ShoppingList;
