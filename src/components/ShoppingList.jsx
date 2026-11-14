@@ -2,10 +2,27 @@ import React, { useState } from "react";
 import ItemForm from "./ItemForm";
 import Filter from "./Filter";
 import Item from "./Item";
+import { useEffect } from "react";
 
 function ShoppingList() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [items, setItems] = useState([]);
+
+  // Add useEffect hook
+  useEffect(() => {
+    fetch("http://localhost:4000/items")
+      .then(r => {
+        if (r.ok) {
+          return r.json()
+        } else {
+          console.log("fetch request failed")
+        }
+      })
+      .then(items => setItems(items))
+      .catch(error => console.log(error))
+  }, []);
+
+
 
   function handleCategoryChange(category) {
     setSelectedCategory(category);
