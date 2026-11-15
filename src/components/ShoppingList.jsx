@@ -25,10 +25,13 @@ fetch(`http://localhost:4000/items`)
 
     return item.category === selectedCategory;
   });
+  function HandleNewItem(newItem){
+    setItems(prevItems =>[...prevItems,newItem])
+  }
 
   return (
     <div className="ShoppingList">
-      <ItemForm />
+      <ItemForm  onAddItem={HandleNewItem}/>
       <Filter
         category={selectedCategory}
         onCategoryChange={handleCategoryChange}

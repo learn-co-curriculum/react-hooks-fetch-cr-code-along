@@ -1,39 +1,141 @@
 {
   "items": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Yogurt",
       "category": "Dairy",
       "isInCart": false
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Pomegranate",
       "category": "Produce",
       "isInCart": false
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Lettuce",
       "category": "Produce",
       "isInCart": false
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "String Cheese",
       "category": "Dairy",
       "isInCart": false
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Swiss Cheese",
       "category": "Dairy",
       "isInCart": false
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Cookies",
       "category": "Dessert",
+      "isInCart": false
+    },
+    {
+      "id": "8f6c",
+      "name": "milk",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "3813",
+      "name": "veges",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "708c",
+      "name": "veges",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "1e6d",
+      "name": "milk",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "7fce",
+      "name": "milk",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "446e",
+      "name": "milk",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "1211",
+      "name": "milk",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "1b27",
+      "name": "milk",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "d864",
+      "name": "cheese",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "e236",
+      "name": "cheese",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "5a33",
+      "name": "cheese",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "8512",
+      "name": "cheese",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "99dc",
+      "name": "cheese",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "848e",
+      "name": "cheese",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "cba4",
+      "name": "cheese",
+      "category": "Dairy",
+      "isInCart": false
+    },
+    {
+      "id": "d2c4",
+      "name": "cabbages",
+      "category": "Produce",
+      "isInCart": false
+    },
+    {
+      "id": "c603",
+      "name": "wheat",
+      "category": "Produce",
       "isInCart": false
     }
   ]
